@@ -1,0 +1,19 @@
+@font-face {
+	font-family: "Metropolis Regular";
+	src: url(../assets/fonts/metropolis/Metropolis-Regular.woff);
+}
+
+@font-face {
+	font-family: "Metropolis Medium";
+	src: url(../assets/fonts/metropolis/Metropolis-Medium.woff);
+}
+
+@font-face {
+	font-family: "Metropolis SemiBold";
+	src: url(../assets/fonts/metropolis/Metropolis-SemiBold.woff);
+}
+
+@font-face {
+	font-family: "Metropolis Bold";
+	src: url(../assets/fonts/metropolis/Metropolis-Bold.woff);
+}

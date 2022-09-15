@@ -1,0 +1,363 @@
+main{
+	padding: 30px;
+	.cta__group{
+		text-align: center;
+		h3{
+			text-transform: uppercase;
+			font: normal normal 15px/7.5px $metropolis;
+		}
+		h1{
+			text-transform: capitalize;
+			font: normal bold 40px/40px $metropolisbold;
+			margin: 18px 0;
+		}
+		p{
+			font: normal normal 16px/20px $metropolis;
+		}
+	}
+
+	.btn{
+		text-align: center;
+		margin: 30px 0;
+		&__link{
+			border-radius: 25px;
+			border: 1.5px solid $bordercolor;
+			padding: 15px 25px;
+			background: transparent;
+			margin: 8px 3px;
+			display: inline-block;
+			color: $primary;
+			font-size: 15px;
+			@include transitionEase();
+			&.active{
+				background: $tertiary;
+				color: $primary !important;
+				border: 1.5px solid transparent;
+			}
+			&.month__btn{
+				&.active{
+					background: $btnColor1;
+				}
+				&:hover{
+					background: $btnColor1;
+				}
+			}
+			&.quarter__btn{
+				&.active{
+					background: $btnColor2;
+				}
+				&:hover{
+					background: $btnColor2;
+				}
+			}
+			&.year__btn{
+				&.active{
+					background: $btnColor3;
+				}
+				&:hover{
+					background: $btnColor3;
+				}
+			}
+			&:hover{
+				@include transitionEase();
+				background: $tertiary;
+				color: $primary !important;
+				border: 1.5px solid transparent;
+			}
+		}
+	}
+
+	.pricing{
+		padding: 0 25px;
+		&__plan{
+			// @include flexItems(row, center, center, nowrap);
+			position: relative;
+			width: 100%;
+		}
+		&__cards{
+			display: none;
+			&.active{
+				position: absolute;
+				top: 0;
+				width: 100%;
+				left: 0;
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+			}
+			.card{
+				margin: 10px 15px;
+				padding: 40px;
+				padding-right: 30px;
+				border-radius: 20px;
+				&:not(.active){
+					border: 1.5px solid $bordercolor;
+				}
+				&.active{
+					background: $tertiary;
+					transform: scale(1.05);
+					border: 1.5px solid transparent;
+					.card__packages{
+						ul{
+							li{
+								&.disabled{
+									i{
+										color: lighten($bordercolor, 20%);
+									}
+									svg{
+										fill: lighten($bordercolor, 20%);
+									}
+								}
+							}
+						}
+					}
+
+					&:hover{
+						.card__packages{
+							ul{
+								li{
+									&.disabled{
+										i{
+											color: lighten($bordercolor, 20%) !important;
+										}
+										svg{
+											fill: lighten($bordercolor, 20%) !important;
+										}
+									}
+								}
+							}
+						}
+					}	
+				}
+				&.month__card{
+					&.active{
+						background: $btnColor1;
+					}
+					.card__btn{
+						a{
+							background: $btnColor1;
+							&.active{
+								background: $primary;
+								i{
+									color: $btnColor1;
+								}
+							}
+						}
+					}
+					&:hover{
+						background: $btnColor1 !important;
+						.card__btn{
+							a{
+								background: $primary;
+								i{
+									color: $btnColor1 !important;
+								}
+								svg{
+									fill: $btnColor1 !important;
+								}
+							}
+						}
+					}
+				}
+				&.quarter__card{
+					&.active{
+						background: $btnColor2;
+					}
+					.card__btn{
+						a{
+							background: $btnColor2;
+							&.active{
+								background: $primary;
+								i{
+									color: $btnColor2;
+								}
+							}
+						}
+					}
+					&:hover{
+						background: $btnColor2 !important;
+						.card__btn{
+							a{
+								background: $primary;
+								i{
+									color: $btnColor2 !important;
+								}
+								svg{
+									fill: $btnColor2 !important;
+								}
+							}
+						}
+					}
+				}
+				&.year__card{
+					&.active{
+						background: $btnColor3;
+					}
+					.card__btn{
+						a{
+							background: $btnColor3;
+							&.active{
+								background: $primary;
+								i{
+									color: $btnColor3;
+								}
+							}
+						}
+					}
+					&:hover{
+						background: $btnColor3 !important;
+						.card__btn{
+							a{
+								background: $primary;
+								i{
+									color: $btnColor3 !important;
+								}
+								svg{
+									fill: $btnColor3 !important;
+								}
+							}
+						}
+					}
+				}
+				&__info{
+					h2{
+						font: normal normal 30px/40px $metropolisemibold;
+					}
+					p{
+						margin: 15px 0;
+						font: normal normal 16px/25px $metropolis;
+					}
+				}
+				&__price{
+					margin: 20px 0;
+					b{
+						font: normal normal 45px/50px $metropolisemibold;
+					}
+				}
+				&__packages{
+					margin: 30px 0;
+					ul{
+						li{
+							@include flexItems(row, start, center, nowrap);
+							margin-bottom: 15px;
+							&.disabled{
+								color: $bordercolor;
+								text-decoration: none;
+								i{
+									color: $bordercolor;
+								}
+								svg{
+									fill: $bordercolor;
+								}
+							}
+							svg{
+								margin-right: 10px;
+							}
+							i{
+								line-height: 20px;
+							}
+						}
+					}
+				}
+				&__btn{
+					a{
+						@include flexItems(row, center, center, nowrap);
+						background: $tertiary;
+						border: none;
+						padding: 20px 25px 20px 20px;
+						border-radius: 7px;
+						cursor: pointer;
+						max-width: 185px;
+						position: relative;
+						@include transitionEase();
+						&.active{
+							background: $primary;
+							i{
+								color: $tertiary;
+							}
+							svg{
+								fill: $tertiary;
+							}
+						}
+						i{
+							font-size: 16px;
+							text-transform: uppercase;
+							font-family: $metropolismedium;
+							display: inline-block;
+							@include transitionEase();
+						}
+						svg{
+							margin-left: 5px;
+							width: 20px;
+							height: 20px;
+							position: absolute;
+							opacity: 0;
+							top: 17px;
+							right: 12px;
+							@include transitionEase();
+						}
+						&:hover{
+							@include transitionEase();
+							i{
+								@include transitionEase();
+								padding-right: 25px;
+							}
+							svg{
+								@include transitionEase();
+								opacity: 1;
+								right: 20px;
+							}
+						}
+					}
+				}
+				&:hover{
+					background: $tertiary;
+					border: 1.5px solid transparent;
+					@include transitionEase();
+					.card__info{
+						h2, p{
+							color: $primary !important;
+						}
+					}
+					.card__price{
+						b, span{
+							color: $primary !important;
+						}
+					}
+					.card__packages{
+						ul{
+							li{
+								svg{
+									fill: $primary !important;
+								}
+								i{
+									color: $primary !important;
+								}
+								&.disabled{
+									i{
+										color: lighten($bordercolor, 30%) !important;
+									}
+									svg{
+										fill: lighten($bordercolor, 30%) !important;
+									}
+								}
+							}
+						}
+					}
+					
+					.card__btn{
+						@include transitionEase();
+						a{
+							background: $primary;
+							i{
+								color: $tertiary;
+							}
+							svg{
+								fill: $tertiary;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

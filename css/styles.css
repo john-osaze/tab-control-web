@@ -1,0 +1,495 @@
+main {
+  padding: 30px;
+}
+
+main .cta__group {
+  text-align: center;
+}
+
+main .cta__group h3 {
+  text-transform: uppercase;
+  font: normal normal 15px/7.5px "Metropolis Regular";
+}
+
+main .cta__group h1 {
+  text-transform: capitalize;
+  font: normal bold 40px/40px "Metropolis Bold";
+  margin: 18px 0;
+}
+
+main .cta__group p {
+  font: normal normal 16px/20px "Metropolis Regular";
+}
+
+main .btn {
+  text-align: center;
+  margin: 30px 0;
+}
+
+main .btn__link {
+  border-radius: 25px;
+  border: 1.5px solid #777777;
+  padding: 15px 25px;
+  background: transparent;
+  margin: 8px 3px;
+  display: inline-block;
+  color: #ffffff;
+  font-size: 15px;
+  transition: all 0.4s ease-in-out;
+}
+
+main .btn__link.active {
+  background: #5956e9;
+  color: #ffffff !important;
+  border: 1.5px solid transparent;
+}
+
+main .btn__link.month__btn.active {
+  background: #ab1234;
+}
+
+main .btn__link.month__btn:hover {
+  background: #ab1234;
+}
+
+main .btn__link.quarter__btn.active {
+  background: #f8ac20;
+}
+
+main .btn__link.quarter__btn:hover {
+  background: #f8ac20;
+}
+
+main .btn__link.year__btn.active {
+  background: #10af02;
+}
+
+main .btn__link.year__btn:hover {
+  background: #10af02;
+}
+
+main .btn__link:hover {
+  transition: all 0.4s ease-in-out;
+  background: #5956e9;
+  color: #ffffff !important;
+  border: 1.5px solid transparent;
+}
+
+main .pricing {
+  padding: 0 25px;
+}
+
+main .pricing__plan {
+  position: relative;
+  width: 100%;
+}
+
+main .pricing__cards {
+  display: none;
+}
+
+main .pricing__cards.active {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  left: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+main .pricing__cards .card {
+  margin: 10px 15px;
+  padding: 40px;
+  padding-right: 30px;
+  border-radius: 20px;
+}
+
+main .pricing__cards .card:not(.active) {
+  border: 1.5px solid #777777;
+}
+
+main .pricing__cards .card.active {
+  background: #5956e9;
+  transform: scale(1.05);
+  border: 1.5px solid transparent;
+}
+
+main .pricing__cards .card.active .card__packages ul li.disabled i {
+  color: #aaaaaa;
+}
+
+main .pricing__cards .card.active .card__packages ul li.disabled svg {
+  fill: #aaaaaa;
+}
+
+main .pricing__cards .card.active:hover .card__packages ul li.disabled i {
+  color: #aaaaaa !important;
+}
+
+main .pricing__cards .card.active:hover .card__packages ul li.disabled svg {
+  fill: #aaaaaa !important;
+}
+
+main .pricing__cards .card.month__card.active {
+  background: #ab1234;
+}
+
+main .pricing__cards .card.month__card .card__btn a {
+  background: #ab1234;
+}
+
+main .pricing__cards .card.month__card .card__btn a.active {
+  background: #ffffff;
+}
+
+main .pricing__cards .card.month__card .card__btn a.active i {
+  color: #ab1234;
+}
+
+main .pricing__cards .card.month__card:hover {
+  background: #ab1234 !important;
+}
+
+main .pricing__cards .card.month__card:hover .card__btn a {
+  background: #ffffff;
+}
+
+main .pricing__cards .card.month__card:hover .card__btn a i {
+  color: #ab1234 !important;
+}
+
+main .pricing__cards .card.month__card:hover .card__btn a svg {
+  fill: #ab1234 !important;
+}
+
+main .pricing__cards .card.quarter__card.active {
+  background: #f8ac20;
+}
+
+main .pricing__cards .card.quarter__card .card__btn a {
+  background: #f8ac20;
+}
+
+main .pricing__cards .card.quarter__card .card__btn a.active {
+  background: #ffffff;
+}
+
+main .pricing__cards .card.quarter__card .card__btn a.active i {
+  color: #f8ac20;
+}
+
+main .pricing__cards .card.quarter__card:hover {
+  background: #f8ac20 !important;
+}
+
+main .pricing__cards .card.quarter__card:hover .card__btn a {
+  background: #ffffff;
+}
+
+main .pricing__cards .card.quarter__card:hover .card__btn a i {
+  color: #f8ac20 !important;
+}
+
+main .pricing__cards .card.quarter__card:hover .card__btn a svg {
+  fill: #f8ac20 !important;
+}
+
+main .pricing__cards .card.year__card.active {
+  background: #10af02;
+}
+
+main .pricing__cards .card.year__card .card__btn a {
+  background: #10af02;
+}
+
+main .pricing__cards .card.year__card .card__btn a.active {
+  background: #ffffff;
+}
+
+main .pricing__cards .card.year__card .card__btn a.active i {
+  color: #10af02;
+}
+
+main .pricing__cards .card.year__card:hover {
+  background: #10af02 !important;
+}
+
+main .pricing__cards .card.year__card:hover .card__btn a {
+  background: #ffffff;
+}
+
+main .pricing__cards .card.year__card:hover .card__btn a i {
+  color: #10af02 !important;
+}
+
+main .pricing__cards .card.year__card:hover .card__btn a svg {
+  fill: #10af02 !important;
+}
+
+main .pricing__cards .card__info h2 {
+  font: normal normal 30px/40px "Metropolis SemiBold";
+}
+
+main .pricing__cards .card__info p {
+  margin: 15px 0;
+  font: normal normal 16px/25px "Metropolis Regular";
+}
+
+main .pricing__cards .card__price {
+  margin: 20px 0;
+}
+
+main .pricing__cards .card__price b {
+  font: normal normal 45px/50px "Metropolis SemiBold";
+}
+
+main .pricing__cards .card__packages {
+  margin: 30px 0;
+}
+
+main .pricing__cards .card__packages ul li {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin-bottom: 15px;
+}
+
+main .pricing__cards .card__packages ul li.disabled {
+  color: #777777;
+  text-decoration: none;
+}
+
+main .pricing__cards .card__packages ul li.disabled i {
+  color: #777777;
+}
+
+main .pricing__cards .card__packages ul li.disabled svg {
+  fill: #777777;
+}
+
+main .pricing__cards .card__packages ul li svg {
+  margin-right: 10px;
+}
+
+main .pricing__cards .card__packages ul li i {
+  line-height: 20px;
+}
+
+main .pricing__cards .card__btn a {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  background: #5956e9;
+  border: none;
+  padding: 20px 25px 20px 20px;
+  border-radius: 7px;
+  cursor: pointer;
+  max-width: 185px;
+  position: relative;
+  transition: all 0.4s ease-in-out;
+}
+
+main .pricing__cards .card__btn a.active {
+  background: #ffffff;
+}
+
+main .pricing__cards .card__btn a.active i {
+  color: #5956e9;
+}
+
+main .pricing__cards .card__btn a.active svg {
+  fill: #5956e9;
+}
+
+main .pricing__cards .card__btn a i {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-family: "Metropolis Medium";
+  display: inline-block;
+  transition: all 0.4s ease-in-out;
+}
+
+main .pricing__cards .card__btn a svg {
+  margin-left: 5px;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  opacity: 0;
+  top: 17px;
+  right: 12px;
+  transition: all 0.4s ease-in-out;
+}
+
+main .pricing__cards .card__btn a:hover {
+  transition: all 0.4s ease-in-out;
+}
+
+main .pricing__cards .card__btn a:hover i {
+  transition: all 0.4s ease-in-out;
+  padding-right: 25px;
+}
+
+main .pricing__cards .card__btn a:hover svg {
+  transition: all 0.4s ease-in-out;
+  opacity: 1;
+  right: 20px;
+}
+
+main .pricing__cards .card:hover {
+  background: #5956e9;
+  border: 1.5px solid transparent;
+  transition: all 0.4s ease-in-out;
+}
+
+main .pricing__cards .card:hover .card__info h2, main .pricing__cards .card:hover .card__info p {
+  color: #ffffff !important;
+}
+
+main .pricing__cards .card:hover .card__price b, main .pricing__cards .card:hover .card__price span {
+  color: #ffffff !important;
+}
+
+main .pricing__cards .card:hover .card__packages ul li svg {
+  fill: #ffffff !important;
+}
+
+main .pricing__cards .card:hover .card__packages ul li i {
+  color: #ffffff !important;
+}
+
+main .pricing__cards .card:hover .card__packages ul li.disabled i {
+  color: #c4c4c4 !important;
+}
+
+main .pricing__cards .card:hover .card__packages ul li.disabled svg {
+  fill: #c4c4c4 !important;
+}
+
+main .pricing__cards .card:hover .card__btn {
+  transition: all 0.4s ease-in-out;
+}
+
+main .pricing__cards .card:hover .card__btn a {
+  background: #ffffff;
+}
+
+main .pricing__cards .card:hover .card__btn a i {
+  color: #5956e9;
+}
+
+main .pricing__cards .card:hover .card__btn a svg {
+  fill: #5956e9;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  color: #ffffff;
+}
+
+html {
+  box-sizing: border-box;
+  color: #ffffff;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Metropolis Regular";
+  background-color: #111111;
+  transition: all 0.4s ease-in-out;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+i {
+  font-style: normal;
+}
+
+svg {
+  fill: #ffffff;
+  width: 16px;
+  height: 16px;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  padding: 0 40px;
+}
+
+:focus {
+  outline: none;
+}
+
+::selection {
+  color: #ffffff;
+  background-color: #6f6dec;
+}
+
+.nav__offset {
+  background-color: #ffffff;
+  box-shadow: 0 5px 25px #11111110;
+  transition: box-shadow 200ms ease-in-out;
+}
+
+#preloader {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: #ffffff url(../images/preloader.gif) center no-repeat;
+  z-index: 1000;
+}
+
+#darkmode {
+  position: fixed;
+  left: 0;
+  top: 50%;
+  padding: 15px 20px 15px 16px;
+  background: #5956e9;
+  border-radius: 0 25px 25px 0;
+  cursor: pointer;
+  width: 50px;
+  height: 45px;
+  transition: all 0.4s ease-in-out;
+}
+
+#darkmode > svg {
+  position: absolute;
+  transition: all 0.4s ease-in-out;
+  display: none;
+}
+
+#darkmode > svg.visible {
+  display: block;
+}
+
+#darkmode:hover {
+  transition: all 0.4s ease-in-out;
+  background: #1c19c0;
+}
+
+#darkmode:hover > svg {
+  transition: all 0.4s ease-in-out;
+  transform: rotate(360deg);
+}
+
+.bg__white {
+  background: #fff;
+  transition: all 0.4s ease-in-out;
+}
+
+.light__theme {
+  color: #000 !important;
+  fill: #000 !important;
+}
+/*# sourceMappingURL=styles.css.map */
